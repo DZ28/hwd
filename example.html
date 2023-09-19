@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" type="x-icon" href="dolphins_logo.png">
+
+  <meta name="viewport" content="width=device-width">
+  <title>High Woodlands Dolphins</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+ <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+
+<body class="bg-blue-950">
+  <nav class="p-5 bg-gray-200 shadow md:flex md: items-center md:justify-between animate__animated animate__fadeInDown">
+    <div class="flex justify-between items-center cursor-pointer">
+      <img class="h-10 inline" src="dolphins_logo.png">
+      <span class="text-2xl font-[Courier] font-semibold">
+        
+        High Woodlands Dolphins
+      </span>
+      <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+      </span>
+    </div>
+    
+    <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-gray-200 w-full left-0 md:w-auto md:py-0 py-4 md:ply-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+      <li class="mx-4 my-6 md:my-0">
+        <a href="#" class="text-xl hover:text-cyan-500 duration-500">Home</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="#" class="text-xl hover:text-cyan-500 duration-500">Calendar</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="#" class="text-xl hover:text-cyan-500 duration-500">Swim Groups</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="#" class="text-xl hover:text-cyan-500 duration-500">Documents</a>
+      </li>
+      <button class="bg-gray-700 text-white font-[Courier] duration-500 px-6 py-2 mx-4 hover:bg-gray-500 rounded">
+         Sign In 
+      </button>
+    </ul>
+  </nav>
+  
+  <div class="image_wrapper">
+    <img class="w-full" src="front_pic.jpg">
+    
+  </div> 
+  <span class="text-8xl mx-2 text-white flex justify-center animate__animated animate__bounceInDown animate__delay-1s">
+    <ion-icon name="chevron-down-outline"></ion-icon>
+  </span>
+  <div class="text-white px-4">
+    <p>
+      Practice has begun!
+      <br></br>
+      We're one week into the season, and our roster is pretty close to set, though we still have room for a swimmer or two in the older groups.
+    <br></br>
+      The meet schedule is populated on the website now, but we won't be ready to start accepting meet commitments (or uncommitments) until the roster is completely set on June 1st.
+    <br></br>
+      There may be another optional meet or two that are currently TBD.  We'll add them when we get the info.
+    </p>
+    
+  </div>
+
+  <br></br>
+  <div class="text-white text-3xl font-[Georgia] flex justify-center animate__animated animate__zoomIn">
+    <h2>
+      High Woodlands Swimming Pool
+    </h2>
+  </div>
+  <br></br>
+  <ul class="text-white flex justify-around">
+    <li>
+      <h2 class=" text-2xl flex justify-center">
+        Phone & Fax
+      </h2>
+      <p>
+         (425)806-9119       
+      </p>
+    </li>
+    <li>
+      <h2 class="text-2xl flex justify-center">
+        Address
+      </h2>
+      <p>
+        11600 NE 148th Ct Kirkland, WA 98034
+      </p>
+    </li>
+    <li>
+      <h2 class="text-2xl flex justify-center">
+        Contact Us
+      </h2>
+      <a href="https://www.gomotionapp.com/team/rechwdwa/page/system/contactus" class="peer cursor-pointer">
+        Link to Contact Form
+      </a>
+      
+    </li>
+  </ul>
+  <br></br>
+  <iframe class="flex justify-evenly" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10733.727758633428!2d-122.1861399!3d47.7342734!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54900de8e353732d%3A0x3eb27aa9d66336d9!2sHigh%20Woodlands%20Private%20Pool!5e0!3m2!1sen!2sus!4v1685401151594!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <br></br>
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  
+  <script>
+    function Menu(e){
+      let list = document.querySelector('ul');
+      e.name === 'menu' ? (e.name = "close", list.classList.add('top-[80px]'), list.classList.add('opacity-100')) :( e.name = "menu", list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+    }
+  </script>
+</body>
+
+</html>
